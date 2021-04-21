@@ -6,10 +6,15 @@
     <LinearLayout
         width="match_parent"
         orientation="horizontal"
-        background="#2E0000"
+        background="#0E1824"
         padding="10px">
-        <Button
-            text="Cerrar"/>
+        <TextView
+            iconWidth="60px"
+            iconHeight="60px"
+            drawableLeft="ic_logo.png"
+            text="CuyJS"
+            textSize="35px"
+            singleLine="true"/>
     </LinearLayout>
     <LinearLayout
         orientation="horizontal"
