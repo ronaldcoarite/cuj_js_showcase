@@ -1,0 +1,29 @@
+{
+    "icon": "pages/components/imgs/views/ic_button.png",
+    "title": "Button",
+    "extends": "TextView",
+    "desc": "Boton para capturar eventos de Touch o Click",
+    "attributes": [
+        {
+            "name": "text",
+            "desc": "El texto de la vista"
+        },
+        {
+            "name": "textColor",
+            "desc": "El color del texto"
+        }
+    ],
+    "methods": [{
+            "name": "",
+            "desc": ""
+        }],
+    "examples": [{
+            "label": "Boton Simple con listener establecido en el Xml",
+            "xml": "pages/components/views/button/simple_button/ButtonLayout.xml",
+            "js": "pages/components/views/button/simple_button/ButtonExample.js"
+        },{
+            "label": "Boton con listener establecido por código",
+            "xml": "pages/components/views/button/custom_listener/ButtonListenerLayout.xml",
+            "js": "pages/components/views/button/custom_listener/ButtonListenerExample.js"
+        }]
+}

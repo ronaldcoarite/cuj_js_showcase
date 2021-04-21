@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project xmlns="antlib:org.apache.tools.ant">
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="ant_libs${file.separator}ant-contrib-1.0.jar"/>
+        </classpath>
+    </taskdef>
+    <property name="bashExt" value="bat"/>
+    <property name="scriptBashExt" value="cmd"/>
+    <target name="prepareMaven">
+        <echo level="info" message="Preparando varibales"/>
+        <echo level="info" message="Ruta actual de MAVEN=${mavenHome}"/>
+        <echo level="info" message="Limpiando ruta de MAVEN HOME"/>
+        <!-- Quitando los [..] a la ruta del mavenHome -->
+        <propertyregex property="mavenHome"
+                       input="${mavenHome}"
+                       regexp="\.\."
+                       replace=""
+                       global="true"
+                       override="true"
+                       casesensitive="true"/>
+        <!-- Quitando bin si existe a la ruta del mavenHome -->
+        <propertyregex property="mavenHome"
+                       input="${mavenHome}"
+                       regexp="\\bin\\"
+                       replace=""
+                       global="true"
+                       override="true"
+                       casesensitive="true"/>
+        <!--<var name="mavenHome" unset="true"/>-->
+        <property name="mavenHome2" value="${mavenHome}${file.separator}bin${file.separator}mvn.${scriptBashExt}"/>
+        <echo level="info" message="Ruta limpiada MAVE_HOME=${mavenHome2}"/>
+    </target>
+    <target name="start_dev">
+        <echo level="info" message="Iniciando Modo Desarrollador"/>
+        <antcall target="compile-war" />
+        <antcall target="undeploy-war" />
+        <antcall target="deploy-war" />
+        <antcall target="show-in-brouser" />
+    </target>
+    <target name="compile-war">
+        <antcallback target="prepareMaven" return="mavenHome2"/>
+        <echo level="info" message="Compilando WAR"/>
+        <exec dir="${basedir}" executable="${mavenHome2}">
+            <arg line="clean install" />
+        </exec>
+    </target>
+    <target name="undeploy-war">
+        <echo level="info" message="Quitando Deploy WAR"/>
+        <exec dir="${basedir}${file.separator}target" executable="${wildFlyPath}${file.separator}bin${file.separator}jboss-cli.${bashExt}">
+            <arg line="--connect --commands=&quot;undeploy ${warName}.war&quot;" />
+        </exec>
+    </target>
+    <target name="deploy-war">
+        <echo level="info" message="Desplegando WAR"/>
+        <exec dir="${basedir}${file.separator}target" executable="${wildFlyPath}${file.separator}bin${file.separator}jboss-cli.${bashExt}">
+            <arg line="--connect --commands=&quot;deploy ${warName}.war --force&quot;" />
+        </exec>
+        <echo level="info" message="Aplicacion desplegada"/>
+    </target>
+    <target name="show-in-brouser">
+        <echo level="info" message="Mostrando en navegador"/>
+        <echo level="info" message="Direccion: http://localhost:8080/${contextRoot}"/>
+        <exec dir="${basedir}" executable="explorer"  spawn="false">
+            <arg line="http://localhost:8080/${contextRoot}" />
+        </exec>
+    </target>
+</project>

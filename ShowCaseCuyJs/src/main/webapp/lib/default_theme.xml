@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    <style view="TextView">
+        <item name="textColor">#D2D3D5</item>
+    </style>
+    <style view="Button">
+        <item name="background">lib/imgs/bg_button.9.png</item>
+        <item name="singleLine">true</item>
+        <item name="textColor">#D6EFFF</item>
+        <item name="textSize">13px</item>
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+    </style>
+    <style view="LinkButton">
+        <item name="singleLine">true</item>
+        <item name="textColor">#D6EFFF</item>
+        <item name="textSize">13px</item>
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+        <item name="singleLine">true</item>
+    </style>
+    <style view="ImageButton">
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+    </style>
+    <style view="RadioButton">
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+    </style>
+    <style view="EditText">
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="textSize">13px</item>
+    </style>
+    <style view="Password">
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+    </style>
+    <style view="Spinner">
+        <item name="background">lib/imgs/bg_spinner.9.png</item>
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+    </style>
+    <style view="OptionItem">
+        <item name="textColor">#D2D3D5</item>
+        <item name="audioAdove">lib/sounds/adove.mp3</item>
+        <item name="audioClick">lib/sounds/click.mp3</item>
+    </style>
+</resources>

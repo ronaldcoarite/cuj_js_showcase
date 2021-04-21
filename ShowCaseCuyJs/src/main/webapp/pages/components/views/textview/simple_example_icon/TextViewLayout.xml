@@ -1,0 +1,4 @@
+<TextView
+    singleLine="true"
+    text="Hola Mundo"
+    drawableLeft="pages/components/imgs/views/ic_imageview.png"/>

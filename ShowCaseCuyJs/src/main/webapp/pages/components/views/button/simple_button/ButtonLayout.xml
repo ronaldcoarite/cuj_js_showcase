@@ -1,0 +1,4 @@
+<Button
+    singleLine="true"
+    text="Hazme Click"
+    onClick="onClickButtonExample"/>

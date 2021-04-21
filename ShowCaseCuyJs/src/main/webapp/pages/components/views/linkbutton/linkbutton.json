@@ -1,0 +1,25 @@
+{
+    "icon": "pages/components/imgs/views/ic_linkbutton.png",
+    "title": "LinkButton",
+    "extends": "LinkButton",
+    "desc": "Boton de tipo enlace",
+    "attributes": [
+        {
+            "name": "text",
+            "desc": "El texto de la vista"
+        }
+    ],
+    "methods": [{
+            "name": "",
+            "desc": ""
+        }],
+    "examples": [{
+            "label": "Texto Simple",
+            "xml": "pages/components/views/textview/simple_example/TextViewLayout.xml",
+            "js": "pages/components/views/textview/simple_example/TextViewExample.js"
+        }, {
+            "label": "Texto con icono",
+            "xml": "pages/components/views/textview/simple_example_icon/TextViewLayout.xml",
+            "js": "pages/components/views/textview/simple_example_icon/TextViewExample.js"
+        }]
+}

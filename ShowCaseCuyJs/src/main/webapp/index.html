@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShowCaseCuyJs</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="lib/style.css" />
+        <script src="lib/cuyjs.min.js"></script>
+        <script>
+            (async () => {
+                let manifest = {
+                    theme: "lib/default_theme.xml",
+                    pages: [
+                        { name: "pages/components/ComponentsPage.js", category: "ROOT", history:"false", screenOrientation: "portrait" }
+                    ]
+                };
+                await PageManager.startApp(manifest);
+            })();
+        </script>
+    </head>
+</html>
