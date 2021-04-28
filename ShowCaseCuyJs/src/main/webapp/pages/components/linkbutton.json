@@ -16,10 +16,14 @@
     "examples": [{
             "label": "Texto Simple",
             "xml": "pages/components/views/textview/simple_example/TextViewLayout.xml",
-            "js": "pages/components/views/textview/simple_example/TextViewExample.js"
+            "js": [
+                { "pages/components/views/textview/simple_example/TextViewExample.js", "type": "script"}
+            ]
         }, {
             "label": "Texto con icono",
             "xml": "pages/components/views/textview/simple_example_icon/TextViewLayout.xml",
-            "js": "pages/components/views/textview/simple_example_icon/TextViewExample.js"
+            "js": [
+                { "pages/components/views/textview/simple_example_icon/TextViewExample.js", "type": "script"}
+            ]
         }]
 }

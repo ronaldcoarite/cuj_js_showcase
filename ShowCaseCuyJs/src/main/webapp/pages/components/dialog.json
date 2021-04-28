@@ -1,0 +1,29 @@
+{
+    "icon": "pages/components/imgs/ux/ic_dialog.png",
+    "title": "Dialog",
+    "extends": null,
+    "desc": "Component contenedor para mostrar en un Modal un grupo de vistas. ",
+    "attributes": [],
+    "methods": [],
+    "examples": [{
+            "label": "Dialogo simple",
+            "label": "Texto Simple",
+            "sources": [{
+                "url": "pages/components/ux/dialog/simple_dialog/ButtonShow.xml",
+                "type": "xml",
+                "coupling_mode": "inflate"
+            },{
+                "url": "pages/components/ux/dialog/simple_dialog/DialogSimpleLayout.xml",
+                "type": "xml",
+                "coupling_mode": "none"
+            },{
+                "url": "pages/components/ux/dialog/simple_dialog/DialogSimpleExample.js",
+                "type": "js",
+                "coupling_mode": "resource"
+            },{
+                "url": "pages/components/ux/dialog/simple_dialog/MostrarDialog.js",
+                "type": "js",
+                "coupling_mode": "script"
+            }]
+        }]
+}

@@ -1,0 +1,27 @@
+{
+    "icon": "pages/components/imgs/views/ic_textview.png",
+    "title": "TextView",
+    "extends": "View",
+    "desc": "Componente para mostrar textos",
+    "attributes": [
+    ],
+    "methods": [{
+            "name": "",
+            "desc": ""
+        }],
+    "examples": [{
+            "label": "Texto Simple",
+            "sources": [{
+                "url": "pages/components/views/textview/simple_example/TextViewLayout.xml",
+                "type": "xml",
+                "coupling_mode": "inflate"
+            }]
+        }, {
+            "label": "Texto con icono",
+            "sources": [{
+                "url": "pages/components/views/textview/simple_example_icon/TextViewLayout.xml",
+                "type": "xml",
+                "coupling_mode": "inflate"
+            }]
+        }]
+}

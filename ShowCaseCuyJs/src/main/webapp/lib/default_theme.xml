@@ -45,4 +45,9 @@
         <item name="audioAdove">lib/sounds/adove.mp3</item>
         <item name="audioClick">lib/sounds/click.mp3</item>
     </style>
+    <style view="TabLayout">
+        <item name="textColor">#D2D3D5</item>
+        <item name="audioAdoveTab">lib/sounds/adove.mp3</item>
+        <item name="audioClickTab">lib/sounds/click.mp3</item>
+    </style>
 </resources>

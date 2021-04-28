@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    width="400px"
+    height="350px"
+    background="lib/imgs/bg_dialog.9.png"
+    orientation="vertical">
+    <Button
+        text="Cerrar"
+        onClick="onClickCerrar"/>
+</LinearLayout>

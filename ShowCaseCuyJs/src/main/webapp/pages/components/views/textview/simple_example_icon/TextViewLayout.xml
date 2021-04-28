@@ -1,4 +1,6 @@
 <TextView
     singleLine="true"
     text="Hola Mundo"
+    iconWidth="40px"
+    iconHeight="35px"
     drawableLeft="pages/components/imgs/views/ic_imageview.png"/>
