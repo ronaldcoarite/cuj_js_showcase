@@ -2,19 +2,47 @@
 <LinearLayout
     width="match_parent"
     height="match_parent"
-    orientation="vertical">
+    orientation="vertical"
+    background="#0E1824">
     <LinearLayout
-        width="match_parent"
-        orientation="horizontal"
-        background="#0E1824"
-        padding="10px">
-        <TextView
-            iconWidth="60px"
-            iconHeight="60px"
-            drawableLeft="ic_logo.png"
-            text="CuyJS"
-            textSize="35px"
-            singleLine="true"/>
+        orientation="vertical"
+        width="match_parent">
+        <MenuLayout
+            width="wrap_content"
+            height="wrap_content"
+            orientation="horizontal"
+            layoutGravity="right"
+            marginTop="10px"
+            marginRight="30px">
+            <LinkButton
+                text="Domótica e IOT"
+                marginLeft="10px"
+                marginRight="10px"/>
+            <LinkButton
+                text="Descargas"
+                marginLeft="10px"
+                marginRight="10px"
+                cssClassList="textSelected"/>
+            <LinkButton
+                text="Acerca de Nosotros"
+                marginLeft="10px"
+                marginRight="10px"/>
+            <LinkButton
+                text="Ingresar"
+                marginLeft="10px"
+                marginRight="10px"/>
+        </MenuLayout>
+        <LinearLayout
+            orientation="horizontal"
+            padding="10px">
+            <TextView
+                iconWidth="60px"
+                iconHeight="60px"
+                drawableLeft="ic_logo.png"
+                text="CuyJS"
+                textSize="35px"
+                singleLine="true"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         orientation="horizontal"

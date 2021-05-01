@@ -33,7 +33,7 @@ body {
 .Button:hover, .RadioButton:hover, .ImageButton:hover, .LinkButton:hover, .Spinner:hover, .OptionItem:hover, .TabTitle:hover{
     filter: drop-shadow(0px 0px 10px #27EDEC);
     color: black;
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-shadow:0px 0px 20px white;
     cursor: url('imgs/ic_cursor_hand.png'), auto;
 }
@@ -57,7 +57,7 @@ body {
 
 .EditText:hover, .Password:hover {
     cursor: url('imgs/ic_cursor_write.png'), auto;
-    transform: scale(1.1);
+    transform: scale(1.03);
     filter: drop-shadow(0px 0px 10px #27EDEC);
 }
 .EditText:focus, .Password:focus {
